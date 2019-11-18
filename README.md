@@ -1,30 +1,27 @@
-# Lesson 2
+# Lesson 1
 ## Задание 1 
+
 ```js
-var letters = [];
-var massage = "Backend As A Service".split(" ");
-for ( var i = 0; i < massage.length; i++ ) {
-    letters.push( massage[i] [0] );
+var cashOfTickets ;
+for (cashOfTickets= 0; cashOfTickets<=700 ; cashOfTickets+=100) {
+ cashOfTickets>=660
+ console.log(cashOfTickets);
 }
-console.log ( letters );
-
-var a = letters.join('');
-console.log (a);
+alert("Денег на кино хватает, го за билетами!!!")
 ```
-
 ## Задание 2
 
 ```js
-var number = 0 ;
-function getDataNow (number) {
-  if ( typeof number === 'number')
-    return new Date ().toLocaleString();
-  else return (`Не верный тип данных`);
+var name, password;
+
+function movieRegistration() {
+  return name = prompt("Введите Имя (минимум 3 символа)"), password = prompt("Введите Пароль (минимум 6 символов)")
 }
-var exit = getDataNow(number);
-console.log(exit); 
+do {
+	alert ("Для регистрации заполните поля: Имя и Пароль");
+  movieRegistration ();
+} 
+while ((typeof name === 'undefined' ||password === 'undefined' ) || (name.trim().length < 3 || password.trim().length < 6)) {
+}
+alert ("Регистрация успешна!!!")
 ```
-
-## Задание 3
-
-Совсем не понял(((
